@@ -11,3 +11,13 @@ type Prettify<T> = {
 } & {};
 ```
 https://www.totaltypescript.com/concepts/the-prettify-helper
+
+
+```ts
+declare const __opaque__type__: unique symbol;
+
+type OpaqueType<BaseType, TagName> = BaseType & {
+  readonly [__opaque__type__]: TagName;
+};
+```
+https://blog.beraliv.dev/2021-05-07-opaque-type-in-typescript
