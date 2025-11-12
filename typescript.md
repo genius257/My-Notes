@@ -21,3 +21,9 @@ type OpaqueType<BaseType, TagName> = BaseType & {
 };
 ```
 https://blog.beraliv.dev/2021-05-07-opaque-type-in-typescript
+
+
+```ts
+type EmptyObjectLitteral = Record<string, never>;
+```
+https://www.totaltypescript.com/the-empty-object-type-in-typescript
