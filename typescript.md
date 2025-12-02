@@ -27,3 +27,9 @@ https://blog.beraliv.dev/2021-05-07-opaque-type-in-typescript
 type EmptyObjectLitteral = Record<string, never>;
 ```
 https://www.totaltypescript.com/the-empty-object-type-in-typescript
+
+
+```ts
+// The comma after type T in generic declaration is needed for ts parsing to work, if parsed with the jsx option is set in the tsconfig
+const genericArrowFunction = <T,>(parameter: T): T => parameter;
+```
